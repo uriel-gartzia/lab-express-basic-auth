@@ -1,0 +1,25 @@
+<div>
+
+<h2>Sign In</h2>
+
+<form action="/sign-in" method="post">
+
+<label for="username">Username</label>
+<input type="text" name="username">
+
+<br>
+
+<label for="password">Password</label>
+<input type="password" name="password">
+
+<br>
+
+<button>Sign In</button>
+
+{{#if this.errorMessage}}
+<p>{{this.errorMessage}}</p>
+{{/if}}
+
+</form>
+
+</div>
